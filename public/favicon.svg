@@ -54,7 +54,7 @@
      transform="translate(-34.519787,-94.904639)">
     <path
        d="M 76.790548,138.64637 H 44.49669 l -0.03494,-20.459 c 15.789294,-14.97337 17.702637,15.69311 32.328801,20.459 z"
-       style="font-size:85.3333px;line-height:1.25;white-space:pre;shape-inside:url(#rect7806);fill:#808080;fill-opacity:1;stroke-width:0.0700042"
+       style="font-size:85.3333px;line-height:1.25;white-space:pre;shape-inside:url(#rect7806);fill:#333333;fill-opacity:1;stroke-width:0.0700042"
        id="path11402"
        sodipodi:nodetypes="ccccc" />
     <text
@@ -69,13 +69,13 @@
        style="font-size:85.3333px;line-height:1.25;white-space:pre;shape-inside:url(#rect7806)" />
     <path
        d="M 44.431439,126.65746 44.405865,94.904639 H 76.694413 Z"
-       style="font-size:85.3333px;line-height:1.25;white-space:pre;shape-inside:url(#rect7806);fill:#333333;fill-opacity:1;stroke-width:0.27668"
+       style="font-size:85.3333px;line-height:1.25;white-space:pre;shape-inside:url(#rect7806);fill:#666666;fill-opacity:1;stroke-width:0.27668"
        id="path11248"
        sodipodi:nodetypes="cccc" />
     <path
        d="M 44.556407,138.64637 H 34.519787 V 94.905839 h 10.03662 z"
        id="path9551"
        sodipodi:nodetypes="ccccc"
-       style="font-size:85.3333px;line-height:1.25;white-space:pre;shape-inside:url(#rect7806);fill:#1a1a1a;fill-opacity:1;stroke-width:0.722589" />
+       style="font-size:85.3333px;line-height:1.25;white-space:pre;shape-inside:url(#rect7806);fill:#808080;fill-opacity:1;stroke-width:0.722589" />
   </g>
 </svg>
