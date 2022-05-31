@@ -47,7 +47,7 @@ const Home = ({ quotes }: Props) => {
       <Head>
         <title>Kevin quotes</title>
         <meta name="description" content="Stuff that kevin says" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
 
       <div className="mt-12 container mx-auto">
