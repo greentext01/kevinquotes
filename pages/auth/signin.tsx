@@ -26,6 +26,8 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const providers = await getProviders();
   const session = await getSession(ctx);
 
+  console.log()
+
   if (session)
     return {
       redirect: {
