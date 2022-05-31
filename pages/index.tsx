@@ -8,6 +8,7 @@ import LoadingQuote from "components/loadingQuote";
 import Link from "next/link";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 type Props = {
   quotes: {
@@ -43,16 +44,44 @@ const Home = ({ quotes }: Props) => {
   }
 
   return (
-    <div>
-      <Head>
-        <title>Kevin quotes</title>
-        <meta name="description" content="Stuff that kevin says" />
-        <link rel="icon" href="/favicon.svg" />
-      </Head>
-
-      <div className="mt-12 container mx-auto">
-        <h1 className="text-center text-4xl font-bold mb-4">Kevin quotes</h1>
-        <main className="max-w-xl mx-auto">
+    <>
+      <h1 className="text-center text-4xl font-bold mb-4 mt-12">
+        Kevin quotes
+      </h1>
+      <div className="flex justify-center mx-2 flex-col md:flex-row items-center md:items-start">
+        <div className="flex-grow w-40 sm:flex-grow">
+          <div>
+            <a
+              href="https://scratch.mit.edu/projects/685823787"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="/carlos-ad.png"
+                width="400"
+                height="1000"
+                alt="Carlos' ad"
+              />
+            </a>
+          </div>
+          <div>
+            <Image
+              src="/ad-theo.png"
+              width="200"
+              height="400"
+              alt="Theo's ad"
+            />
+          </div>
+          <div>
+            <Image
+              src="/robert-ad.png"
+              width="50"
+              height="50"
+              alt="Robert's ad"
+            />
+          </div>
+        </div>
+        <main className="flex-grow max-w-xl">
           {data?.user.admin && (
             <>
               <Link href="/create">
@@ -93,8 +122,13 @@ const Home = ({ quotes }: Props) => {
             </Link>
           )}
           {router.query.message && (
-            <div className="bg-green-500 bg-opacity-30 outline outline-1 outline-green-400 text-green-400 text-center p-4 rounded-md mb-3 mx-6 w-100">
+            <div className="bg-green-500 bg-opacity-30 border border-green-400 text-green-400 text-center p-4 rounded-md mb-3 mx-6 w-100 overflow-hidden">
               {router.query.message}
+            </div>
+          )}
+          {router.query.error && (
+            <div className="bg-red-400 bg-opacity-30 border border-red-400 text-red-400 text-center p-4 rounded-md mb-3 mx-6 w-100 overflow-hidden">
+              Error: {router.query.error}
             </div>
           )}
           <InfiniteScroll
@@ -117,8 +151,9 @@ const Home = ({ quotes }: Props) => {
             ))}
           </InfiniteScroll>
         </main>
+        <div className="flex-grow w-40"></div>
       </div>
-    </div>
+    </>
   );
 };
 

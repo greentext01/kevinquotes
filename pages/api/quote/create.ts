@@ -23,6 +23,11 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     return res.status(400).json({ message: "Content must be a string" });
   }
 
+  if (body.content.length > 200) {
+    return res
+      .redirect("/?error=Content%20must%20be%20less%20than%20200%20characters");
+  }
+
   await prisma.quote.create({
     data: {
       quote: body.content,

@@ -23,8 +23,7 @@ const Create = () => {
           <label htmlFor="content" className="font-medium">
             Content
           </label>
-          <input
-            type="text"
+          <textarea
             name="content"
             id="content"
             className="w-full p-2 rounded-md bg-neutral-900 focus:ring-0 border-0"

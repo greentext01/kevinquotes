@@ -57,7 +57,7 @@ model VerificationToken {
 }
 
 model Quote {
-  quote     String
+  quote     String   @db.VarChar(length: 200)
   id        Int      @id @default(autoincrement())
   createdAt DateTime @default(now())
 }

@@ -11,15 +11,15 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
   const user = await getSession({ req });
   if (!user?.user.admin) {
-    return res.status(401).json({ message: "Not authenticated" });
+    return res.redirect("/?error=Not%20authenticated");
   }
 
   if (!body.email) {
-    return res.status(400).json({ message: "Missing email" });
+    return res.redirect("/?error=Missing%20email");
   }
 
   if (typeof body.email !== "string") {
-    return res.status(400).json({ message: "Email must be a string" });
+    return res.redirect("/?error=Email%20must%20be%20a%20string");
   }
 
   try {
@@ -32,7 +32,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
       },
     });
   } catch (e) {
-    return res.status(404).json({ message: "User not found" });
+    return res.redirect("/?error=User%20not%20found");
   }
 
   res.redirect("/?message=Admin%20added");
