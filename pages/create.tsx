@@ -18,6 +18,10 @@ const Create = () => {
   return (
     <div className="max-w-xl mx-auto mt-12">
       <h1 className="text-center text-4xl font-bold mb-4">Create quote</h1>
+      <p className="text-neutral-400 mb-3">
+        The quotes must be said by Kevin, without him wanting to be quoted, and
+        without anyone intentionally making him say them.
+      </p>
       <form action="/api/quote/create" method="POST">
         <div className="mb-4">
           <label htmlFor="content" className="font-medium">
