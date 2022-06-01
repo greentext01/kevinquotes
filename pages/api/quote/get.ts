@@ -13,6 +13,9 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
       quote: true,
     },
     take: 10,
+    orderBy: {
+      createdAt: "desc",
+    }
   });
 
   // Return 204 if no quotes found
