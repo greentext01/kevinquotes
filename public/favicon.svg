@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="42.270763mm"
-   height="43.74173mm"
-   viewBox="0 0 42.270763 43.74173"
+   width="32.3288mm"
+   height="31.75285mm"
+   viewBox="0 0 32.3288 31.75285"
    version="1.1"
    id="svg5"
    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
@@ -24,8 +24,8 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="2.096401"
-     inkscape:cx="86.09994"
-     inkscape:cy="151.45003"
+     inkscape:cx="48.893318"
+     inkscape:cy="117.58247"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="1072"
@@ -51,10 +51,10 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-34.519787,-94.904639)">
+     transform="translate(-44.396499,-103.9005)">
     <path
-       d="M 76.790548,138.64637 H 44.49669 l -0.03494,-20.459 c 15.789294,-14.97337 17.702637,15.69311 32.328801,20.459 z"
-       style="font-size:85.3333px;line-height:1.25;white-space:pre;shape-inside:url(#rect7806);fill:#808080;fill-opacity:1;stroke-width:0.0700042"
+       d="M 76.725297,135.65335 H 44.431439 l -0.02557,-31.75285 c 8.216792,11.65659 17.693267,26.98696 32.319431,31.75285 z"
+       style="font-size:85.3333px;line-height:1.25;white-space:pre;shape-inside:url(#rect7806);fill:#b3b3b3;fill-opacity:1;stroke-width:0.0700042"
        id="path11402"
        sodipodi:nodetypes="ccccc" />
     <text
@@ -68,14 +68,9 @@
        id="text7804"
        style="font-size:85.3333px;line-height:1.25;white-space:pre;shape-inside:url(#rect7806)" />
     <path
-       d="M 44.431439,126.65746 44.405865,94.904639 H 76.694413 Z"
-       style="font-size:85.3333px;line-height:1.25;white-space:pre;shape-inside:url(#rect7806);fill:#333333;fill-opacity:1;stroke-width:0.27668"
+       d="M 44.431439,135.65335 44.405869,103.9005 H 76.694417 C 66.289483,125.73455 49.87055,109.34616 44.431439,135.65335 Z"
+       style="font-size:85.3333px;line-height:1.25;white-space:pre;shape-inside:url(#rect7806);fill:#1a1a1a;fill-opacity:1;stroke-width:0.27668"
        id="path11248"
        sodipodi:nodetypes="cccc" />
-    <path
-       d="M 44.556407,138.64637 H 34.519787 V 94.905839 h 10.03662 z"
-       id="path9551"
-       sodipodi:nodetypes="ccccc"
-       style="font-size:85.3333px;line-height:1.25;white-space:pre;shape-inside:url(#rect7806);fill:#1a1a1a;fill-opacity:1;stroke-width:0.722589" />
   </g>
 </svg>

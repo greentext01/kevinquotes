@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
         <meta name="description" content="Stuff that kevin says" />
         <link rel="icon" href="/favicon.svg" />
         <meta name="theme-color" content="#262626" />
-        <meta property="og:image" content="https://kevinquotes.com/favicon.svg" />
+        <meta property="og:image" content="https://www.kevinquotes.com/favicon.svg" />
       </Head>
       <div className="bg-neutral-800 text-neutral-200 min-h-screen">
         <Link href="/">
