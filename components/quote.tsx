@@ -44,7 +44,7 @@ export default function QuoteCompoent({ quote, admin }: Props) {
         <form action="/api/quote/delete" method="post">
           <input type="hidden" name="id" value={quote.id} />
           {admin && (
-            <button className="underline text-red-400" type="submit">
+            <button className="underline text-red-400 ml-3" type="submit">
               Delete quote
             </button>
           )}
