@@ -46,6 +46,7 @@ model User {
   accounts      Account[]
   sessions      Session[]
   admin         Boolean   @default(false)
+  quotes        Quote[]
 }
 
 model VerificationToken {
@@ -58,6 +59,9 @@ model VerificationToken {
 
 model Quote {
   quote     String   @db.VarChar(length: 200)
-  id        Int      @id @default(autoincrement())
+  id        Int      @id @default(autoincrement()) @unique
   createdAt DateTime @default(now())
+  owner     User?    @relation(fields: [ownerId], references: [id], onDelete: SetNull)
+  ownerId   String?
+  price     Int?     @default(10)
 }

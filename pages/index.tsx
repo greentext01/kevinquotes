@@ -1,6 +1,5 @@
 import prisma from "@lib/db";
-import { Quote } from "@prisma/client";
-import Head from "next/head";
+import { User } from "@prisma/client";
 import { useState } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
 import QuoteComponent from "components/quote";
@@ -14,6 +13,7 @@ type Props = {
   quotes: {
     quote: string;
     id: number;
+    owner: User;
   }[];
 };
 
@@ -66,7 +66,7 @@ const Home = ({ quotes }: Props) => {
           </div>
           <div>
             <Image
-              src="/ad-theo.png"
+              src="/theo-ad.png"
               width="200"
               height="400"
               alt="Theo's ad"
@@ -166,6 +166,7 @@ export const getServerSideProps = async () => {
     select: {
       quote: true,
       id: true,
+      owner: true,
     },
   });
 

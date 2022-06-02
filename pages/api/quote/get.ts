@@ -11,6 +11,8 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     skip: start,
     select: {
       quote: true,
+      id: true,
+      owner: true,
     },
     take: 10,
     orderBy: {
