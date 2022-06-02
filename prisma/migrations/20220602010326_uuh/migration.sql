@@ -51,6 +51,7 @@ CREATE TABLE "Quote" (
     "id" SERIAL NOT NULL,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "ownerId" TEXT,
+    "price" INTEGER DEFAULT 10,
 
     CONSTRAINT "Quote_pkey" PRIMARY KEY ("id")
 );

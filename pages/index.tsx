@@ -166,7 +166,7 @@ export const getServerSideProps = async () => {
     select: {
       quote: true,
       id: true,
-      owner: true,
+      owner: true
     },
   });
 
