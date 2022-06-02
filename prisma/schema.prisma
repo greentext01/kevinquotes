@@ -59,7 +59,7 @@ model VerificationToken {
 
 model Quote {
   quote     String   @db.VarChar(length: 200)
-  id        Int      @id @default(autoincrement()) @unique
+  id        Int      @id @default(autoincrement())
   createdAt DateTime @default(now())
   owner     User?    @relation(fields: [ownerId], references: [id], onDelete: SetNull)
   ownerId   String?
