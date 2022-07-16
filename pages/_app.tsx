@@ -10,6 +10,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
       <Head>
         <title>Kevin quotes</title>
         <meta name="description" content="Stuff that kevin says" />
+        <meta name="google-site-verification" content="8GKubJhu-eTv5gnnpQrv2D7s3Y-4DSEYKZZJY4Tuzbg" />
         <link rel="icon" href="/favicon.svg" />
         <meta name="theme-color" content="#262626" />
         <meta property="og:image" content="https://www.kevinquotes.com/favicon.svg" />
